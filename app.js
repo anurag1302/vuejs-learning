@@ -10,6 +10,14 @@ const vm = Vue.createApp({
       lastName: "Doe",
     };
   },
+  methods: {
+    fullName() {
+      return this.firstName + this.lastName;
+    },
+    todaysDate() {
+      return new Date();
+    },
+  },
 }).mount("#app");
 
 //data properties on a view instance can be accessed in the JS file by wrapping the Vue instance in a variable or const,
